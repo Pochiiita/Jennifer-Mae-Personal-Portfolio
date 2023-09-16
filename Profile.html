@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF 8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width-device-width, initial-scale-1.0">
+        <title>Jennifer Mae Azagra Personal Profile</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images\logo.jpg" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Hotel Manager / Event Organizer / CEO</p>
+            <h1>Hi, Im <span>Jennifer Mae</span> from Philippines,<br> a Tourism Management Student</h1>
+        </div>
+    </div>
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Proficient in adaptability and time management while elevating excellent skills in service. 
+                Willing to be trained and can easily pick up new procedures and tasks. 
+                Trained in different types of trainings from event management to people management training and was able to improve and gain skills and knowledge in handling and communicating well with people.  
+                Knowledgeable in planning events and in quality service management to help in boosting businesses and its growth.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">SKILLS</p>
+                    <p class="tab-links" onclick="opentab('experience')">EXPERIENCE</p>
+                    <p class="tab-links" onclick="opentab('education')">EDUCATION</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Hotel Manager</span><br> Event Organizer</li>
+                        <li><span>CEO</span><br> Administrative Task, Planning and Scheduling</li>
+                        <li><span>Hospitality Skills</span><br> Customer Service Skills</li>
+                        <li><span>User-generated Content Creation</span><br> Adaptability Skills</li>
+                        <li><span>Time Management Skills</span><br> Multi-tasking Skills</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Social Media Manager</span><br> Mej Burger Cafe<br>2021-2022 </li>
+                        <li><span>Service Crew</span><br> Toy's Mamihan<br> 2020-2023</li>
+                        <li><span>Customer Service Training</span><br> Contact Center Services Training<br> 2021</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Luzon Technological College Foundation Inc.</span><br>Ramon Santos St., Brgy. 33 Penaranda, Legazpi City<br>Bachelor of Science in Tourism Management<br> 2021-Present<br>Academic  Excellence Awardee<br> Service Awardee</li>
+                        <li><span>Legazpi City National High School</span><br>Pag-asa, Rawis, Legazpi City<br>Science Technology Engineering and Mathematics<br> 2019-2021<br> Consistent Academic Excellence Awardee</li>
+                        <li><span>Legazpi City National high School</span><br> Pag-asa, Rawis, Legazpi City<br> 2014-2019<br> Principal's Lister<br> Consistent Academic Excellence Awardee</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+</body>
+</html>
